@@ -1,29 +1,29 @@
-# Data (if large)
-data/raw/
-data/processed/
-*.csv
-*.pkl
-*.h5
-
-# Notebook checkpoints
-.ipynb_checkpoints/
-
 # Python
 __pycache__/
 *.pyc
-.env
-venv/
+*.pyo
+*.pyd
+.Python
 env/
+venv/
 .venv/
+*.egg-info/
+dist/
+build/
 
-# IDE
-.vscode/
-.idea/
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
 
-# Model artifacts
-models/*.pkl
-models/*.h5
-
-# Deployment
-app/__pycache__/
+# Logs
 *.log
+tunnel.log
+streamlit.log
+api.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model files (if too large, but this one is small)
+# fraud_detection_model.pkl   # <-- you can include or exclude
